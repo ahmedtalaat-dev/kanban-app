@@ -6,6 +6,7 @@ export default function Home() {
       <h1>Dark Mode</h1>
 
       <ThemeToggle />
+      
     </main>
   );
 }

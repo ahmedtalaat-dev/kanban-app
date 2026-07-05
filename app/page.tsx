@@ -1,12 +1,13 @@
-import ThemeToggle from "@/components/ThemeToggle";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 export default function Home() {
   return (
     <main style={{ padding: "40px" }}>
       <h1>Dark Mode</h1>
 
-      <ThemeToggle />
-      
+      <ThemeProvider>
+      <p>hello</p>
+    </ThemeProvider>
     </main>
   );
 }

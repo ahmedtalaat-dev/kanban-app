@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
-import { KanbanCard } from './kanban-card'
-import { ColorPicker } from './color-picker'
+import { KanbanCard } from './KanbanCard'
+import { ColorPicker } from './ColorPicker'
 
 export interface Card {
   id: string

@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { Plus, Moon, Sun, Search } from 'lucide-react'
-import { KanbanColumn, Card } from './kanban-column'
-import { useTheme } from './theme-provider'
+import { KanbanColumn, Card } from './KanbanColumn'
+import { useTheme } from './ThemeProvider'
 
 interface Column {
   id: string

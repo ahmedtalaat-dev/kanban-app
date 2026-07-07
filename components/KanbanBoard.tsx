@@ -2,16 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { Plus, Moon, Sun, Search } from 'lucide-react'
-import { KanbanColumn, Card } from './KanbanColumn'
+import { KanbanColumn } from './KanbanColumn'
 import { useTheme } from './ThemeProvider'
-
-interface Column {
-  id: string
-  title: string
-  color: string
-  backgroundColor: string
-  cards: Card[]
-}
+import { Column } from '@/types'
 
 export function KanbanBoard() {
   const { isDark, toggleTheme } = useTheme()

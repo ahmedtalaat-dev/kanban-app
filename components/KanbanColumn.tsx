@@ -4,28 +4,7 @@ import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
 import { KanbanCard } from './KanbanCard'
 import { ColorPicker } from './ColorPicker'
-
-export interface Card {
-  id: string
-  title: string
-  description?: string
-  priority?: 'low' | 'medium' | 'high'
-  backgroundColor?: string
-}
-
-interface KanbanColumnProps {
-  id: string
-  title: string
-  color: string
-  backgroundColor: string
-  cards: Card[]
-  onAddCard: (columnId: string, title: string, description: string, priority: 'low' | 'medium' | 'high', backgroundColor: string) => void
-  onDeleteCard: (columnId: string, cardId: string) => void
-  onDropCard: (fromColumnId: string, toColumnId: string, cardId: string) => void
-  onDeleteColumn: (columnId: string) => void
-  onDragStart: (e: React.DragEvent, cardId: string, columnId: string) => void
-  onUpdateColumnColor?: (columnId: string, backgroundColor: string) => void
-}
+import { KanbanColumnProps } from '@/types'
 
 export function KanbanColumn({
   id,

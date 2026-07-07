@@ -1,16 +1,7 @@
 'use client'
 
+import { KanbanCardProps } from '@/types'
 import { Trash2 } from 'lucide-react'
-
-interface KanbanCardProps {
-  id: string
-  title: string
-  description?: string
-  priority?: 'low' | 'medium' | 'high'
-  backgroundColor?: string
-  onDelete: (id: string) => void
-  onDragStart: (e: React.DragEvent, id: string) => void
-}
 
 const priorityColors = {
   low: 'bg-green-100 dark:bg-green-900/30 border-green-300 dark:border-green-700',

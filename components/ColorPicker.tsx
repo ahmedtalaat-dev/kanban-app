@@ -2,12 +2,9 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { ColorPickerProps } from "@/types";
 
-interface ColorPickerProps {
-  value: string;
-  onChange: (color: string) => void;
-  label?: string;
-}
+
 
 const PRESET_COLORS = [
   { name: "Blue", value: "bg-blue-100 dark:bg-blue-900" },

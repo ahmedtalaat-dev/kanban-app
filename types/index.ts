@@ -38,3 +38,9 @@ export interface KanbanColumnProps {
   onDragStart: (e: React.DragEvent, cardId: string, columnId: string) => void
   onUpdateColumnColor?: (columnId: string, backgroundColor: string) => void
 }
+
+export interface ColorPickerProps {
+  value: string;
+  onChange: (color: string) => void;
+  label?: string;
+}

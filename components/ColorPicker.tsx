@@ -20,21 +20,6 @@ const PRESET_COLORS = [
   { name: "Orange", value: "bg-orange-100 dark:bg-orange-900" },
 ];
 
-const HEX_COLORS = [
-  "#3b82f6",
-  "#ef4444",
-  "#10b981",
-  "#8b5cf6",
-  "#f59e0b",
-  "#ec4899",
-  "#06b6d4",
-  "#f97316",
-  "#6366f1",
-  "#14b8a6",
-  "#f43f5e",
-  "#84cc16",
-];
-
 export function ColorPicker({
   value,
   onChange,
@@ -45,16 +30,6 @@ export function ColorPicker({
 
   const handlePresetClick = (color: string) => {
     onChange(color);
-    setIsOpen(false);
-  };
-
-  const handleHexChange = (hex: string) => {
-    setCustomHex(hex);
-  };
-
-  const handleHexSubmit = () => {
-    // Convert hex to a Tailwind class or store as custom color
-    onChange(customHex);
     setIsOpen(false);
   };
 

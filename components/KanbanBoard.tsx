@@ -19,9 +19,7 @@ export function KanbanBoard() {
   const [columns, setColumns] = useState(columnsData);
   const [isAddingColumn, setIsAddingColumn] = useState(false);
   const [newColumnTitle, setNewColumnTitle] = useState("");
-  const [newColumnBgColor, setNewColumnBgColor] = useState(
-    "bg-slate-100 dark:bg-slate-800",
-  );
+  const [newColumnBgColor, setNewColumnBgColor] = useState("bg-muted");
 
   const handleAddCard = (
     columnId: string,

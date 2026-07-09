@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
 import { KanbanCard } from './KanbanCard'
-import { ColorPicker } from './ColorPicker'
 import { KanbanColumnProps } from '@/types'
 
 export function KanbanColumn({
@@ -81,11 +80,7 @@ export function KanbanColumn({
             <span className="text-xs bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 px-2 py-1 rounded-full">
               {cards.length}
             </span>
-            <ColorPicker
-              value={backgroundColor}
-              onChange={(color) => onUpdateColumnColor?.(id, color)}
-              label=""
-            />
+
           </div>
           <button
             onClick={() => onDeleteColumn(id)}
@@ -161,11 +156,6 @@ export function KanbanColumn({
                 <option value="medium">Medium Priority</option>
                 <option value="high">High Priority</option>
               </select>
-              <ColorPicker
-                value={cardBgColor}
-                onChange={setCardBgColor}
-                label="Card Color"
-              />
             </div>
             <div className="flex gap-2">
               <button

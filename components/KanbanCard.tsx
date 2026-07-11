@@ -52,6 +52,7 @@ export function KanbanCard({
         {/* Delete button */}
         <button
           onClick={() => onDelete(id)}
+          aria-label="Delete task"
           className="rounded p-1 text-red-600 opacity-0 transition-opacity hover:bg-red-100 group-hover:opacity-100"
         >
           <Trash size={32} />

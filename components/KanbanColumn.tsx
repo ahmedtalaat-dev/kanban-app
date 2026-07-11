@@ -93,6 +93,7 @@ export function KanbanColumn({
           {/* Delete column button */}
           <button
             onClick={() => onDeleteColumn(id)}
+            aria-label="Delete column"
             className="rounded p-1 text-red-600 transition-colors hover:bg-red-100"
           >
             <X size={18} />

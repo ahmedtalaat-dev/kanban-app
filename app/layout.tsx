@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://kanban-app0.vercel.app/"),
 
   title: {
     default: "TaskFlow | Modern Kanban Board",
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
     title: "TaskFlow | Modern Kanban Board",
     description:
       "Organize your work efficiently with TaskFlow, a modern Kanban board built with Next.js and TypeScript by Ahmed Talaat.",
-    url: "https://your-domain.com",
+    url: "https://kanban-app0.vercel.app/",
     siteName: "TaskFlow",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://kanban-app0.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "TaskFlow - Modern Kanban Board",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: "TaskFlow | Modern Kanban Board",
     description:
       "A clean and responsive Kanban board for task management. Developed by Ahmed Talaat.",
-    images: ["/og-image.png"],
+    images: ["https://kanban-app0.vercel.app/og-image.png"],
   },
 
   icons: {
